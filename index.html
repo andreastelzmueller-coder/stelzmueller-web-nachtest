@@ -17,4 +17,13 @@
     <ul id="liste-essen">
     </ul>
     <h2>Visueller Eindruck</h2>
+    <script>
+const essen = ["Cocido Madrileño", "Bocadillo de Calamares", "Huevos Rotos", "Spanien"];  // Regionale Sepzialitäten und das Land der Stadt
+  const liste = document.getElementById("liste-essen");
+  essen.forEach(h => {
+    let li = document.createElement("li");
+    li.textContent = h;
+    liste.appendChild(li);
+  });
+</script> 
 </body>
